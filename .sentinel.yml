@@ -11,7 +11,7 @@ jobs:
     image: docker.io/library/maven:3.9-eclipse-temurin-17@sha256:1a352420f7aba21f5ad08df31bab55f74c013fb491f1ae8ab1dd7ff9ed698584
     runs_on: { labels: [egress] }
     resources: { cpu: 3, memory: 8GiB }
-    timeout: 45m
+    timeout: 90m
     env:
       MAVEN_ARGS: --show-version --batch-mode --no-transfer-progress -Dmaven.repo.local=/cache/m2
       HOME: /tmp
@@ -27,7 +27,7 @@ jobs:
     image: docker.io/library/maven:3.9-eclipse-temurin-21@sha256:99e61abcff91a9b1333463bd8451fb18495d6eba9250ac66a338b518f8278320
     runs_on: { labels: [egress] }
     resources: { cpu: 4, memory: 8GiB }
-    timeout: 45m
+    timeout: 90m
     env:
       MAVEN_ARGS: --show-version --batch-mode --no-transfer-progress -Dmaven.repo.local=/cache/m2
       HOME: /tmp
@@ -43,7 +43,7 @@ jobs:
     image: docker.io/library/maven:3.9-eclipse-temurin-25@sha256:93b8a14ea2f412782e4e842651273b4d903e35cc496284f178fbbe2d67d00976
     runs_on: { labels: [egress] }
     resources: { cpu: 3, memory: 8GiB }
-    timeout: 45m
+    timeout: 90m
     env:
       MAVEN_ARGS: --show-version --batch-mode --no-transfer-progress -Dmaven.repo.local=/cache/m2
       HOME: /tmp
